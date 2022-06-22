@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPPER AND SCISSORS</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game container-fluid">
+        <div class="row">
+             <!-- player -->
+            <div class="col-4 player">
+                <div class="thinking playerThinking"><img alt="player's choice"></img></div>
+                <div class="speech-bubble"></div>
+                <img class="playerImage" src="./assets/img/player.png"></img>
+                <div class="rockPaperScissors">
+                </div>
+            </div>
+             <!-- result info -->
+            <div class="col-4 result text-white ">
+                <h1 id="informResult">YOU WIN</h1>
+                <div id="numbersOfWin">Number of Win-game: <span>0</span></div>
+                <div id="totalGames">Total of play turns: <span>0</span></div>
+                <button class="btn btn-success mt-3 playButton">PLAY GAME</button>
+                <div class="inform hide">Please place a bet!!!</div>
+              </div>
+            <!-- computer player -->
+            <div class="col-4 playerComputer">
+                <div class="thinking computerThinking"><img alt="computer's choice"></img></div>
+                <div class="speech-bubble"></div>
+                <img class="playerImage" src="./assets/img/playerComputer.png"></img>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./main.js"></script>
+  </body>
+</html>

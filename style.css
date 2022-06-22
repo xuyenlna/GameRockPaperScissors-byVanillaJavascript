@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "fontGame";
+    src: url("./assets/fonts/Pony.ttf");
+  }
+
+
+.game {
+   
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    font-family: fontGame;
+    padding-top: 10vh;
+
+}
+
+.speech-bubble {
+	position: relative;
+	background: #45D994;
+	border-radius: .4em;
+	
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-top-color: #45D994;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -12.5px;
+	margin-bottom: -25px;
+}
+.thinking {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border: solid 3px #45D994 ;
+
+}
+.thinking img {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.playerImage {
+  width: 40%;
+  margin-bottom: -5px;
+  
+}
+.player,
+.playerComputer {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.rockPaperScissors {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.rockPaperScissors button {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: solid 1px black ;
+  
+}
+.rockPaperScissors button:focus {
+  border: solid 3px orange;
+}
+.rockPaperScissors button img {
+  width:40px;
+  height: 40px;
+}
+.result {
+    text-align: center;
+}
+.result h1 {
+  color: #45D994;
+}
+.result span {
+  color:orange
+}
+.result div {
+  font-size: 32px;
+  
+}
+.result .inform {
+  color: red;
+  /* transform: rotate(50%); */
+}
+.hide {
+  display: none;
+}
